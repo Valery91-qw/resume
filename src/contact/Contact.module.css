@@ -1,0 +1,33 @@
+.contactBox {
+    min-height: 50vh;
+    background-color: #8dfa9a;
+}
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid;
+}
+.title {
+    background-color: white;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid;
+}
+.emailForm {
+    margin-top: 10px;
+}
+.nameForm {
+
+}
+.textarea {
+    min-height: 75px;
+    margin-top: 10px;
+}
+.button {
+    margin-top: 10px;
+}

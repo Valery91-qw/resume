@@ -1,0 +1,19 @@
+.myWorksBlock {
+    min-height: 100vh;
+    background-color: violet;
+}
+.myWoksContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.title {
+    background-color: white;
+}
+
+.container {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid;
+}

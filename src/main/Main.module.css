@@ -1,0 +1,20 @@
+.mainBlock {
+    min-height: 100vh;
+    background-color: violet;
+}
+
+.text {
+    width: 300px;
+    background-color: #00FF22;
+}
+.photo {
+    display: flex;
+    border: 1px solid;
+    width: 300px;
+    min-height: 400px;
+    background-color: white;
+    overflow: hidden;
+}
+.img {
+  width: 100%;
+}
