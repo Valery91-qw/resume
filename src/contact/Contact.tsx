@@ -8,7 +8,7 @@ export function Contact() {
         <section className={style.contactBox}>
             <div className={Container.container}>
                 <div className={style.contactContainer}>
-                <h3 className={style.title}>Contact with me</h3>
+                <h3 className={style.title}>Contact</h3>
                 <form className={style.form}>
                     <input className={style.nameForm} placeholder={"Name"}/>
                     <input className={style.emailForm} placeholder={"email"}/>
