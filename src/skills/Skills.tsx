@@ -7,13 +7,15 @@ export function Skills () {
     return (
         <section className={style.skillsBlock}>
             <div className={`${Container.container} ${style.skillsContainer}`}>
-                <h2 className={style.title}>Скилы</h2>
+                <h2 className={style.title}>Skills</h2>
                 <div className={style.skills}>
                     <Skill title={"JS"}
                            description={"Lorem ipsum dolor sit amet. Explicabo, sed."}/>
-                    <Skill title={"CSS"}
+                    <Skill title={"TS"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sed."}/>
                     <Skill title={"REACT"}
+                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sed."}/>
+                    <Skill title={"REDUX"}
                            description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sed."}/>
                 </div>
             </div>

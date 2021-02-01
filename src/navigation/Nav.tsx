@@ -4,10 +4,10 @@ import style from "./Nav.module.css"
 export function Nav() {
     return (
         <nav className={style.nav}>
-            <span className={style.link}>Главная</span>
-            <span className={style.link}>Скилы</span>
-            <span className={style.link}>Проекты</span>
-            <span className={style.link}>Контакты</span>
+            <a href={"#"} className={style.link}>Home</a>
+            <a href={"#"} className={style.link}>Skills</a>
+            <a href={"#"} className={style.link}>Project</a>
+            <a href={"#"} className={style.link}>Contact</a>
         </nav>
     )
 }
