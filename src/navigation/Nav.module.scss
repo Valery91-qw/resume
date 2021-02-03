@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 20px;
+    .link {
+        position: relative;
+
+        padding: 35px 17px;
+
+        text-decoration: none;
+
+        font-family: 'Oswald',sans-serif;;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+    .link:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 17%;
+        height: 7px;
+        width: 7px;
+
+        border-radius: 50%;
+        background: #fff;
+        transform: translateX(-50%);
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .link:hover {
+        opacity: 0.4;
+        transition: 0.3s linear;
+    }
+    .link:hover:before {
+        opacity: 0;
+    }
+}
+
+
+
+
+

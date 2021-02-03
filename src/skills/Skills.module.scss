@@ -1,0 +1,66 @@
+.skillsBlock {
+    background-color: #fff;
+    padding: 100px 0 150px;
+    .skillsContainer {
+        padding-top: 20px;
+        justify-content: flex-start;
+        flex-direction: column;
+        .title {
+            position: relative;
+            right: 300px;
+
+            font-size: 29px;
+            letter-spacing: 0;
+            color: #222222;
+            line-height: 30px;
+
+            margin-bottom: 50px;
+            padding-bottom: 16px;
+
+            background-color: white;
+            @media screen and (max-width: 910px) {
+                right: 150px;
+            }
+            @media screen and (max-width: 654px) {
+                right: 0;
+            }
+        }
+        .title:before {
+            height: calc(100% - 40px);
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 55px;
+            background-color: #202020;
+            @media screen and (max-width: 654px) {
+                left: 20%;
+            }
+        }
+        .title:after {
+            width: 255px;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 2px;
+            height: 1px;
+            background-color: #202020;
+            transition: all 0.4s ease 0s;
+            @media screen and (max-width: 654px) {
+                opacity: 0;
+            }
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            @media screen and (max-width: 654px) {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+

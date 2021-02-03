@@ -1,0 +1,21 @@
+.footerBox {
+    min-height: 50px;
+    padding: 18px 0 ;
+    .FooterContainer {
+        flex-direction: column;
+        .title {
+            background-color: #8dfa9a;
+        }
+        .credits {
+            border: 1px solid;
+        }
+    }
+    .linkContainer {
+        display: flex;
+        border: 1px solid;
+        .link {
+            padding: 5px;
+            text-decoration: none;
+        }
+    }
+}
