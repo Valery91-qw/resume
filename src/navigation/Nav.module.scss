@@ -1,3 +1,5 @@
+@import "./src/common/styles/sass/variables";
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -15,7 +17,7 @@
         font-weight: 400;
         text-transform: uppercase;
 
-        color: #FFFFFF;
+        color: $colorTagA;
     }
     .link:before {
         content: '';
@@ -26,7 +28,7 @@
         width: 7px;
 
         border-radius: 50%;
-        background: #fff;
+        background: $BackgroundColor;
         transform: translateX(-50%);
         -webkit-transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;

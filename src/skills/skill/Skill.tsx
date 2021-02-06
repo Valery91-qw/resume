@@ -7,7 +7,7 @@ export function Skill (props: any) {
             <div style={props.style} className={style.icon}/>
             <div>
             <h4 className={style.title}>{props.title}</h4>
-            <span className={style.description}>{props.description}</span>
+            <p className={style.description}>{props.description}</p>
             </div>
         </div>
     )

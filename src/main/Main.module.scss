@@ -1,3 +1,6 @@
+@import "./src/common/styles/sass/variables";
+
+
 .mainBlock {
     min-height: 100vh;
     background-color: #202020;
@@ -9,7 +12,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 55px;
             font-weight: 300;
-            color: #ffffff;
+            color: $BackgroundColor;
             text-transform: uppercase;
             letter-spacing: 0;
             line-height: 55px;
@@ -19,7 +22,7 @@
         h4 {
             font-size: 19px;
             font-weight: 300;
-            color: #ffffff;
+            color: $BackgroundColor;
             letter-spacing: 0;
             line-height: 41px;
             text-transform: uppercase;
@@ -31,7 +34,7 @@
         width: 300px;
         min-height: 400px;
 
-        background-color: white;
+        background-color: $BackgroundColor;
         overflow: hidden;
 
         background-size: 300px;

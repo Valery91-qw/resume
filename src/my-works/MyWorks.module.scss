@@ -1,5 +1,7 @@
+@import "./src/common/styles/sass/variables";
+
 .myWorksBlock {
-   background-color: #fff;
+   background-color: $BackgroundColor;
 
    padding: 100px 0 150px;
     .myWoksContainer {
@@ -22,7 +24,7 @@
         margin-bottom: 50px;
         padding-bottom: 16px;
 
-        background-color: white;
+        background-color: $BackgroundColor;
         @media screen and (max-width: 910px) {
             right: 150px;
         }

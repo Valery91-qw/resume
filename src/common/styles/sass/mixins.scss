@@ -1,0 +1,7 @@
+@mixin titleDescription ($fontFamily, $fontSize,$fontWeight,$letterSpacing,$color ) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  letter-spacing: $letterSpacing;
+  color: $color;
+}

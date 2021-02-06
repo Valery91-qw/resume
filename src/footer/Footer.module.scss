@@ -1,21 +1,36 @@
 .footerBox {
     min-height: 50px;
     padding: 18px 0 ;
+
     .FooterContainer {
-        flex-direction: column;
-        .title {
-            background-color: #8dfa9a;
-        }
+       justify-content: space-around;
         .credits {
-            border: 1px solid;
+          margin-left: 14px;
+
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0;
+          color: #898989;
         }
     }
     .linkContainer {
         display: flex;
-        border: 1px solid;
+       align-items: center;
+      .title{
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        font-size: 16px;
+        letter-spacing: 0;
+        font-weight: 600;
+        color: #222222;
+        margin-right: 22px;
+      }
         .link {
             padding: 5px;
             text-decoration: none;
+          .linkImg {
+            width: 16px;
+          }
         }
     }
 }

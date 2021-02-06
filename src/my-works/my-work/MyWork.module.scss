@@ -1,3 +1,7 @@
+@import "./src/common/styles/sass/variables";
+@import "./src/common/styles/sass/mixins";
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -8,7 +12,7 @@
     padding: 10px;
 
     overflow: hidden;
-    background-color: #f6f6f6;
+    background-color: $BackgroundSecondColor;
     border-radius: 20px;
     .img {
         position: relative;
@@ -37,20 +41,17 @@
 
         font-size: 24px;
         text-shadow: 2px 3px 4px ;
-        color: #FFFFFF;
+        color: $colorTagA;
 
         z-index: 1;
     }
     .title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 0;
-        color: #222222;
+        @include titleDescription($fontFamilyTitleDescription,16px,600,0,#222222);
 
         margin-bottom: 15px
     }
     .description {
+        line-height: 26px;
         color: #444;
     }
 }
