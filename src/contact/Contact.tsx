@@ -1,4 +1,4 @@
-import React, {FormEvent, useState} from "react"
+import React from "react"
 import style from "./Contact.module.scss"
 import Container from "../common/styles/Container.module.scss"
 import {Fade} from "react-awesome-reveal";
@@ -13,15 +13,15 @@ type Inputs = {
 
 export function Contact() {
 
-    const { register, handleSubmit, reset , clearErrors ,errors } = useForm<Inputs>()
+    const { register,reset, handleSubmit , clearErrors ,errors } = useForm<Inputs>()
 
     const onSubmit = (data: Inputs) => {
         axios.post(`https://sntp-nodejs-server.herokuapp.com/sendMessage`, data)
-            .then(() => {
-                console.log('Your message ')
-            })
-        //console.log(data)
-        reset()
+            .then((res) => {
+                console.log('all ok', res)
+                reset()
+            }).catch(err =>
+        console.log("something wrong", err))
     }
     return (
         <section onClick={() => {clearErrors()}} className={style.contactBox} id="contact">
