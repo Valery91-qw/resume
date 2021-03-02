@@ -69,6 +69,20 @@
 
                 outline: none;
             }
+            .emailFormError {
+                height: 34px;
+                width: 100%;
+                margin-bottom: 20px;
+
+                letter-spacing: 0;
+                font-size: 13px;
+
+                background: #ffebeb;
+                border: none;
+                border-bottom: 1px solid #dddddd;
+
+                outline: none;
+            }
             .textarea {
                 width: 100%;
                 height: 87px;
