@@ -35,8 +35,11 @@
             width: 300px;
             min-height: 400px;
 
+            border-radius: 20px;
+
             background-color: $BackgroundColor;
             overflow: hidden;
+            box-shadow: 0 0 5px 5px #303030;
 
             background-size: 300px;
 

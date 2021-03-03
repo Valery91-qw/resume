@@ -1,9 +1,10 @@
 import React from "react";
 import style from "./Main.module.scss"
 import Container from "../common/styles/Container.module.scss"
-import image from "../assets/icons/man-312686_1280.png"
+import image from "../assets/icons/IMG_3679==.jpg"
 import Particles from 'react-particles-js';
 import { Fade } from "react-awesome-reveal";
+import Tilt from 'react-parallax-tilt';
 
 export function Main() {
     const img = {
@@ -63,7 +64,9 @@ export function Main() {
                         <h2>My name Valery</h2>
                         <h4>I'm front-end developer</h4>
                     </div>
+                    <Tilt glareEnable={true} glareMaxOpacity={0.8} glareColor="#202020" glarePosition="left">
                     <div style={img} className={style.photo}/>
+                    </Tilt>
                 </div>
             </Fade>
         </section>
