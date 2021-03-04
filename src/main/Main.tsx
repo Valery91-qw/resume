@@ -64,7 +64,7 @@ export function Main() {
                         <h2>My name Valery</h2>
                         <h4>I'm front-end developer</h4>
                     </div>
-                    <Tilt glareEnable={true} glareMaxOpacity={0.8} glareColor="#202020" glarePosition="left">
+                    <Tilt glareEnable={true} glareMaxOpacity={0.9} glareColor="#202020" glarePosition="left">
                     <div style={img} className={style.photo}/>
                     </Tilt>
                 </div>

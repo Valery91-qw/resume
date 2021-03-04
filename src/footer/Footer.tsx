@@ -12,7 +12,7 @@ export function Footer() {
                 <div className={style.linkContainer}>
                     <h5 className={style.title}>Share :</h5>
                     <a href="https://github.com/Valery91-qw" className={style.link}><img alt={"Github"} className={style.linkImg} src={GitImage} /></a>
-                    <a href="#" className={style.link}><img alt={"Linkedin"} className={style.linkImg} src={LinkedinImage}/></a>
+                    <a href="https://www.linkedin.com/in/valery-kryveka-486055204/" className={style.link}><img alt={"Linkedin"} className={style.linkImg} src={LinkedinImage}/></a>
                     <a href="https://www.codewars.com/users/Vaal91" className={style.link}><img alt={"CodeWars"} className={style.linkImg} src={CodeWars}/></a>
                 </div>
                 <p className={style.credits}>created 2021</p>
