@@ -21,13 +21,16 @@ export function Skills() {
                     <h2 className={style.title}>Skills</h2>
                     <div className={style.skills}>
                         <Skill style={jsImg} title={"JavaScript"}
-                               description={"Lorem ipsum dolor sit amet. Explicabo, sed."}/>
+                               description={"Is a lightweight, interpreted, " +
+                               "object-oriented language with first-class functions, and is best known as the scripting " +
+                               "language for Web pages"}/>
                         <Skill style={tsImg} title={"TypeScript"}
-                               description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sed."}/>
+                               description={" Is a programming language developed and maintained by Microsoft. " +
+                               "It is a strict syntactical superset of JavaScript and adds optional static typing to the language."}/>
                         <Skill style={reactImg} title={"REACT"}
-                               description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sed."}/>
+                               description={"Is an open-source, front end, JavaScript library for building user interfaces or UI components"}/>
                         <Skill style={reduxImg} title={"REDUX"}
-                               description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sed."}/>
+                               description={"Is a pattern and library for managing and updating application state, using events called \"actions\"."}/>
                     </div>
                 </div>
             </Fade>

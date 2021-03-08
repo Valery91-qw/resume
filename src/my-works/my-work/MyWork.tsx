@@ -5,7 +5,7 @@ export function MyWork(props: any) {
     return (
         <div className={style.container}>
             <div style={props.style} className={style.img}/>
-            <a className={style.link}  href={"#"}>{props.title}</a>
+            <a target="_blank" className={style.link}  href={props.a}>{props.title}</a>
             <h4 className={style.title}>{props.title}</h4>
             <p className={style.description}>{props.description}</p>
         </div>
