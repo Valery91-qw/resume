@@ -1,0 +1,83 @@
+@import "./src/common/styles/sass/variables";
+
+.navBurger {
+  display: flex;
+  margin: 0 40px;
+
+  .navBurgerItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    transform: translate(0, -150px);
+    background-color: #202020;
+    transition: 0.8s linear;
+    .link {
+      position: relative;
+
+      text-decoration: none;
+      cursor: pointer;
+
+      padding: 5px 5px;
+
+      font-family: 'Oswald', sans-serif;;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      color: $colorTagA;
+    }
+    .link:hover {
+      opacity: 0.4;
+      transition: 0.3s linear;
+    }
+  }
+  .show{
+    transform: translate(0, 0);
+  }
+  .navBurgerBtn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $colorTagA;
+
+    outline: none;
+    border: none;
+  }
+  .navBurgerBtn:before{
+    position: absolute;
+    content: '';
+    top: -9px;
+    right: 0;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $colorTagA;
+  }
+  .navBurgerBtn:after{
+    position: absolute;
+    content: '';
+    top: 9px;
+    right: 0;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $colorTagA;
+  }
+  @media screen and (min-width: 430px) {
+    display: none;
+  }
+}

@@ -61,7 +61,7 @@ export function Main() {
                 <div className={Container.container} >
                     <div className={style.text}>
                         <h4>Hi there</h4>
-                        <h2>My name Valery</h2>
+                        <h2>My name is Valery</h2>
                         <h4>I'm front-end developer</h4>
                     </div>
                     <div style={img} className={style.photo}/>
