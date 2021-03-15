@@ -1,14 +1,15 @@
 @import "./src/common/styles/sass/variables";
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 88px;
-    background-color: $BackgroundThirdColor;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 88px;
+  background-color: $BackgroundThirdColor;
 
-    z-index: 100;
+  z-index: 100;
 }
+

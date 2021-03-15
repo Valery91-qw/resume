@@ -5,8 +5,7 @@ import {BurgerNav} from "../navigation/burger-nav/Burger-nav";
 
 export function Header() {
     return (<header className={style.header}>
+        <BurgerNav/>
             <Nav/>
-            <BurgerNav/>
-        </header>
-    )
+        </header>)
 }

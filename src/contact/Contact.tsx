@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import style from "./Contact.module.scss"
 import Container from "../common/styles/Container.module.scss"
 import {Fade} from "react-awesome-reveal";
@@ -13,15 +13,17 @@ type Inputs = {
 
 export function Contact() {
 
-    const { register,reset, handleSubmit , clearErrors ,errors } = useForm<Inputs>()
+    const { register,reset, handleSubmit , clearErrors ,errors,  } = useForm<Inputs>()
+    const [disable, setDisable] = useState(false)
 
     const onSubmit = (data: Inputs) => {
+        setDisable(true)
         axios.post(`https://sntp-nodejs-server.herokuapp.com/sendMessage`, data)
             .then((res) => {
-                console.log('all ok', res)
+                setDisable(false)
                 reset()
-            }).catch(err =>
-        console.log("something wrong", err))
+            })
+            .catch(() => setDisable(false))
     }
     return (
         <section onClick={() => {clearErrors()}} className={style.contactBox} id="contact">
@@ -34,7 +36,7 @@ export function Contact() {
                             <input className={errors.email ? style.emailFormError :  style.emailForm }
                                    placeholder={"email"} name='email' ref={register({required: true, pattern: /@/ })}/>
                             <textarea className={style.textarea} placeholder={"Your message"} name='message' ref={register}/>
-                            <button className={style.button}>send</button>
+                            <button disabled={disable} className={disable ? style.buttonDisable : style.button}>send</button>
                         </form>
                     </div>
                 </div>
