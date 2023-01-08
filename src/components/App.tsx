@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {Skills} from "./skills/Skills";
 import {Header} from "./header/Header";
 import {Main} from "./main/Main";
@@ -10,14 +9,14 @@ import {Contact} from "./contact/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <>
         <Header/>
         <Main/>
         <Skills />
         <MyWorks/>
         <Contact/>
         <Footer/>
-    </div>
+    </>
   );
 }
 

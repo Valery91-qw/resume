@@ -1,10 +1,10 @@
 import React from "react"
 import style from "./MyWorks.module.scss"
-import Container from "../common/styles/Container.module.scss"
+import Container from "../../styles/Container.module.scss"
 import {MyWork} from "./my-work/MyWork";
-import someWork from "../assets/icons/images.png"
+import someWork from "../../assets/icons/images.png"
 import { Fade } from "react-awesome-reveal";
-import todolistImg from "../assets/icons/Todolist.png"
+import todolistImg from "../../assets/icons/Todolist.png"
 
 export function MyWorks() {
     const someImage = {backgroundImage: `url(${someWork})`}

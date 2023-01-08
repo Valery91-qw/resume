@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Skills.module.scss"
-import Container from "../common/styles/Container.module.scss"
+import Container from "../../styles/Container.module.scss"
 import {Skill} from "./skill/Skill";
-import typeScriptImg from "../assets/icons/typescript.png"
-import javaScriptImg from "../assets/icons/javascript.png"
-import reactImage from  "../assets/icons/react.png"
-import reduxImage from "../assets/icons/redux.png"
+import typeScriptImg from "../../assets/icons/typescript.png"
+import javaScriptImg from "../../assets/icons/javascript.png"
+import reactImage from "../../assets/icons/react.png"
+import reduxImage from "../../assets/icons/redux.png"
 import { Fade } from "react-awesome-reveal";
 
 

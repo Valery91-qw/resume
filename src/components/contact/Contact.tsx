@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import style from "./Contact.module.scss"
-import Container from "../common/styles/Container.module.scss"
+import Container from "../../styles/Container.module.scss"
 import {Fade} from "react-awesome-reveal";
 import { useForm } from "react-hook-form";
 import axios from "axios";

@@ -1,9 +1,9 @@
 import React from "react"
 import style from "./Footer.module.scss"
-import Container from "../common/styles/Container.module.scss"
-import GitImage from "../assets/icons/github-logo.png"
-import LinkedinImage from  "../assets/icons/linkedin.png"
-import CodeWars from "../assets/icons/iconfinder_codewars_4691329.png"
+import Container from "../../styles/Container.module.scss"
+import GitImage from "../../assets/icons/github-logo.png"
+import LinkedinImage from "../../assets/icons/linkedin.png"
+import CodeWars from "../../assets/icons/iconfinder_codewars_4691329.png"
 
 export function Footer() {
     return (

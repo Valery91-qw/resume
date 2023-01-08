@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Main.module.scss"
-import Container from "../common/styles/Container.module.scss"
-import image from "../assets/icons/IMG_3679==.jpg"
+import Container from "../../styles/Container.module.scss"
+import image from "../../assets/icons/IMG_3679==.jpg"
 import { Fade } from "react-awesome-reveal";
 
 export function Main() {
