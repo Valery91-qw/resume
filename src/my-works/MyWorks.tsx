@@ -5,12 +5,10 @@ import {MyWork} from "./my-work/MyWork";
 import someWork from "../assets/icons/images.png"
 import { Fade } from "react-awesome-reveal";
 import todolistImg from "../assets/icons/Todolist.png"
-import flickrImg from "../assets/icons/flickr-api.png"
 
 export function MyWorks() {
     const someImage = {backgroundImage: `url(${someWork})`}
     const todolist = {backgroundImage: `url(${todolistImg})`}
-    const flickrImage = {backgroundImage: `url(${flickrImg})`}
 
     return (
         <section className={style.myWorksBlock} id="project">
@@ -22,7 +20,7 @@ export function MyWorks() {
                                 description={"What is a ToDo List? The definition is a simple one. It's a list of " +
                                 "tasks you need to complete, or things that you want to do. Most typically, they're " +
                                 "organised in order of priority."}/>
-                        <MyWork a={'https://Valery91-qw.github.io/elinext-flickr'} style={flickrImage} title={"Search Img"}
+                        <MyWork a={'https://Valery91-qw.github.io/elinext-flickr'} style={someImage} title={"Search Img"}
                                 description={"In this app you may search image." +
                                 " In this app I used Material-UI, React and Redux."}/>
                         <MyWork a={'#'} style={someImage} title={"My some work"}

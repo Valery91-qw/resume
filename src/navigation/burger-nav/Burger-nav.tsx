@@ -8,7 +8,7 @@ export function BurgerNav() {
     const [toggle, setToggle ] = useState(false)
 
     const handleOpen = () => {
-        setToggle(!toggle)
+        setToggle((prev) => !prev)
     }
 
     return (
@@ -19,7 +19,11 @@ export function BurgerNav() {
             <Link smooth={true} to={"project"} className={style.link}>Project</Link>
             <Link smooth={true} to={"contact"} className={style.link}>Contact</Link>
             </div>
-            <button onClick={handleOpen} className={style.navBurgerBtn}/>
+            <div className={toggle ? `${style.navBurgerBtn} ${style.active}` : style.navBurgerBtn} onClick={handleOpen}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     )
 }

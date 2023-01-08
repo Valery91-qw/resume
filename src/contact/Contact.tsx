@@ -13,13 +13,13 @@ type Inputs = {
 
 export function Contact() {
 
-    const { register,reset, handleSubmit , clearErrors ,errors,  } = useForm<Inputs>()
+    const { register,reset, handleSubmit , clearErrors , formState: { errors } ,  } = useForm<Inputs>()
     const [disable, setDisable] = useState(false)
 
     const onSubmit = (data: Inputs) => {
         setDisable(true)
         axios.post(`https://sntp-nodejs-server.herokuapp.com/sendMessage`, data)
-            .then((res) => {
+            .then(() => {
                 setDisable(false)
                 reset()
             })
@@ -32,10 +32,10 @@ export function Contact() {
                     <div className={style.contactContainer}>
                         <h3 className={style.title}>Contact</h3>
                         <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
-                            <input className={style.nameForm} placeholder={"Name"} name='name' ref={register}/>
+                            <input className={style.nameForm} placeholder={"Name"} name='name' {...register}/>
                             <input className={errors.email ? style.emailFormError :  style.emailForm }
-                                   placeholder={"email"} name='email' ref={register({required: true, pattern: /@/ })}/>
-                            <textarea className={style.textarea} placeholder={"Your message"} name='message' ref={register}/>
+                                   {...register('email', {required: true, pattern: /@/ })}/>
+                            <textarea className={style.textarea} placeholder={"Your message"} name='message' {...register}/>
                             <button disabled={disable} className={disable ? style.buttonDisable : style.button}>send</button>
                         </form>
                     </div>

@@ -41,41 +41,51 @@
   .show{
     transform: translate(0, 0);
   }
+
   .navBurgerBtn {
-    position: absolute;
-    top: 40px;
-    right: 20px;
+    position: relative;
+    top: -10px;
+    right: -10px;
 
     width: 30px;
-    height: 3px;
+    height: 30px;
 
-    background-color: $colorTagA;
+    span {
+      width: 30px;
+      height: 2px;
+      position: absolute;
 
-    outline: none;
-    border: none;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+      background-color: $colorTagA;
+      transition: 0.3s linear;
+    }
+
+    span:nth-child(2) {
+      top: calc(50% - 7px);
+    }
+
+    span:nth-child(3) {
+      top: calc(50% + 7px);
+    }
   }
-  .navBurgerBtn:before{
-    position: absolute;
-    content: '';
-    top: -9px;
-    right: 0;
 
-    width: 30px;
-    height: 3px;
-
-    background-color: $colorTagA;
+  .active {
+    span:nth-of-type(1) {
+      display: none;
+    }
+    span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);
+    }
+    span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg);
+    }
   }
-  .navBurgerBtn:after{
-    position: absolute;
-    content: '';
-    top: 9px;
-    right: 0;
 
-    width: 30px;
-    height: 3px;
-
-    background-color: $colorTagA;
-  }
   @media screen and (min-width: 430px) {
     display: none;
   }
