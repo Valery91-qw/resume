@@ -18,7 +18,7 @@ export function Contact() {
 
     const onSubmit = (data: Inputs) => {
         setDisable(true)
-        axios.post(`https://sntp-nodejs-server.herokuapp.com/sendMessage`, data)
+        axios.post(`https://formsubmit.co/43c6e659a5f668b6526105fa226276b3`, data)
             .then(() => {
                 setDisable(false)
                 reset()
@@ -34,6 +34,7 @@ export function Contact() {
                         <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
                             <input className={style.nameForm} placeholder={"Name"} name='name' {...register}/>
                             <input className={errors.email ? style.emailFormError :  style.emailForm }
+                                   placeholder='Email'
                                    {...register('email', {required: true, pattern: /@/ })}/>
                             <textarea className={style.textarea} placeholder={"Your message"} name='message' {...register}/>
                             <button disabled={disable} className={disable ? style.buttonDisable : style.button}>send</button>
