@@ -4,15 +4,15 @@ import Container from "../../styles/Container.module.scss"
 import Carousel from 'react-spring-3d-carousel';
 import {Skill} from "./skill/Skill";
 import {Fade} from "react-awesome-reveal";
-import skillsData from "./skillsData";
+import { skills } from "./skillsData";
 
 export function Skills() {
 
     const [slide, goToSlide] = useState(0)
 
-    const slides = skillsData.map((el, index) => ({
+    const slides = skills.map((el, index) => ({
         key: index,
-        content: <Skill style={el.bg} title={el.title} description={el.description}/>,
+        content: <Skill style={el.style} title={el.title} description={el.description}/>,
         onClick: () => goToSlide(index),
     }))
 
