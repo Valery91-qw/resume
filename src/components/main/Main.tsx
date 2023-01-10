@@ -4,12 +4,11 @@ import Container from "../../styles/Container.module.scss"
 import image from "../../assets/icons/IMG_3679==.jpg"
 import { Fade } from "react-awesome-reveal";
 
+const img = {
+    backgroundImage: `url(${image})`
+}
+
 export function Main() {
-    const img = {
-        backgroundImage: `url(${image})`
-    }
-
-
     return (
         <section className={style.mainBlock} id="main">
             <Fade>

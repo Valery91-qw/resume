@@ -2,7 +2,7 @@
 
 .skillsBlock {
     background-color: $BackgroundColor;
-    padding: 100px 0 150px;
+    padding: 100px 0 50px;
     .skillsContainer {
         padding-top: 20px;
         justify-content: flex-start;
@@ -57,14 +57,15 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            width: 100%;
+            width: 50%;
+            height: 300px;
             @media screen and (max-width: 654px) {
                 justify-content: center;
             }
         }
     }
     @media screen and (max-width: 425px) {
-        padding: 50px 0 100px;
+        padding: 50px 0 25px;
     }
 }
 
