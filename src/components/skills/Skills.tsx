@@ -22,7 +22,7 @@ export function Skills() {
                 <div className={`${Container.container} ${style.skillsContainer}`}>
                     <h2 className={style.title}>Skills</h2>
                     <div className={style.skills}>
-                        <Carousel slides={slides} showNavigation={true} goToSlideDelay={200} goToSlide={slide}/>
+                        <Carousel slides={slides} showNavigation={true} goToSlideDelay={200} goToSlide={slide} />
                     </div>
                 </div>
             </Fade>
